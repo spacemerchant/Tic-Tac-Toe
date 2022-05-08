@@ -22,8 +22,14 @@ let cellChoice = document.querySelectorAll('.cell').forEach( item => item.addEve
             setTimeout(function() {
                 alert(`${lastPlayed} WINS!`);
                 reset();
-              }, 150);
+              }, 100);
         }
+    }
+    if (turnNumber > 8){
+        setTimeout(function() {
+            alert(`ITS A TIE`);
+            reset();
+          }, 100);
     }
 }))
 
